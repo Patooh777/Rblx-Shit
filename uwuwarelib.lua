@@ -2650,7 +2650,7 @@ repeat wait() until game:IsLoaded()
 		for _, tab in next, self.tabs do
 			if tab.canInit then
 				tab:Init()
-				self:selectTab(tab)
+				--self:selectTab(tab)
 			end
 		end
 
