@@ -2462,9 +2462,9 @@ repeat wait() until game:IsLoaded()
 			if self.popup then
 				self.popup:Close()
 			end
-			self.main.Visible = false
-			self.cursor.Visible  = false
-			self.cursor1.Visible  = false
+			self.main.Visible = self.open
+			self.cursor.Visible  = self.open
+			self.cursor1.Visible  = self.open
 		end
 	end
 
