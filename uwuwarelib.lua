@@ -2462,9 +2462,9 @@ repeat wait() until game:IsLoaded()
 			if self.popup then
 				self.popup:Close()
 			end
-			self.main.Visible = self.open
-			self.cursor.Visible  = self.open
-			self.cursor1.Visible  = self.open
+			self.main.Visible = false
+			self.cursor.Visible  = false
+			self.cursor1.Visible  = false
 		end
 	end
 
@@ -2540,6 +2540,15 @@ repeat wait() until game:IsLoaded()
 			Size = UDim2.new(1, -10, 1, -60),
 			BackgroundTransparency = 1,
 			Parent = self.main
+		})
+
+		self.cursor = self:Create("Triangle", {
+			Color = Color3.fromRGB(135, 135, 135),
+			Transparency = 1,
+		})
+		self.cursor1 = self:Create("Triangle", {
+			Color = Color3.fromRGB(155, 155, 155),
+			Transparency = 1,
 		})
 
 		self.tooltip = self:Create("TextLabel", {
