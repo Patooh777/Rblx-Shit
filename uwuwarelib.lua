@@ -1,5 +1,5 @@
 
-local assets = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+local assets = {6183930112, 6071575925, 6071579801, 6073763717, 3570695787, 5941353943, 4155801252, 2454009026, 5553946656, 4155801252, 4918373417, 3570695787, 2592362371}
 local cprovider = Game:GetService"ContentProvider"
 for _, v in next, assets do
 	cprovider:Preload("rbxassetid://" .. v)
@@ -2544,11 +2544,11 @@ repeat wait() until game:IsLoaded()
 
 		self.cursor = self:Create("Triangle", {
 			Color = Color3.fromRGB(180, 180, 180),
-			Transparency = 0.6,
+			Transparency = 1,
 		})
 		self.cursor1 = self:Create("Triangle", {
 			Color = Color3.fromRGB(240, 240, 240),
-			Transparency = 0.6,
+			Transparency = 1,
 		})
 
 		self.tooltip = self:Create("TextLabel", {
