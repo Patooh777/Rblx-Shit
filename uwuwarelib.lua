@@ -2542,15 +2542,6 @@ repeat wait() until game:IsLoaded()
 			Parent = self.main
 		})
 
-		self.cursor = self:Create("Triangle", {
-			Color = Color3.fromRGB(180, 180, 180),
-			Transparency = 1,
-		})
-		self.cursor1 = self:Create("Triangle", {
-			Color = Color3.fromRGB(155, 155, 155),
-			Transparency = 1,
-		})
-
 		self.tooltip = self:Create("TextLabel", {
 			ZIndex = 2,
 			BackgroundTransparency = 1,
