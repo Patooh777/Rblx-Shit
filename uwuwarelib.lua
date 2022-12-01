@@ -2714,7 +2714,7 @@ repeat wait() until game:IsLoaded()
 		end
 	end
 
-	library.SettingsTab = library:AddTab("Settings")
+	library.SettingsTab = library:AddTab("Settings", 3)
 	library.SettingsColumn = library.SettingsTab:AddColumn()
 	library.SettingsColumn1 = library.SettingsTab:AddColumn()
 
