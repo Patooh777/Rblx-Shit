@@ -2456,15 +2456,15 @@ repeat wait() until game:IsLoaded()
 		if self.open then
 			inputService.MouseIconEnabled = false
 		else
-			inputService.MouseIconEnabled = self.mousestate
+			inputService.MouseIconEnabled = false
 		end
 		if self.main then
 			if self.popup then
 				self.popup:Close()
 			end
 			self.main.Visible = self.open
-			self.cursor.Visible  = self.open
-			self.cursor1.Visible  = self.open
+			self.cursor.Visible  = false
+			self.cursor1.Visible  = false
 		end
 	end
 
