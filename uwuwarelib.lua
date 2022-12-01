@@ -2713,7 +2713,7 @@ repeat wait() until game:IsLoaded()
 			delay(1, function() self:Close() end)
 		end
 	end
-
+    wait(.1)
 	library.SettingsTab = library:AddTab("Settings", 100)
 	library.SettingsColumn = library.SettingsTab:AddColumn()
 	library.SettingsColumn1 = library.SettingsTab:AddColumn()
