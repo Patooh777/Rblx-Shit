@@ -1,5 +1,5 @@
 
-local assets = {6183930112, 6071575925, 6071579801, 6073763717, 3570695787, 5941353943, 4155801252, 2454009026, 5553946656, 4155801252, 4918373417, 3570695787, 2592362371}
+local assets = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 local cprovider = Game:GetService"ContentProvider"
 for _, v in next, assets do
 	cprovider:Preload("rbxassetid://" .. v)
