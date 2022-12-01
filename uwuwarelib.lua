@@ -2543,11 +2543,11 @@ repeat wait() until game:IsLoaded()
 		})
 
 		self.cursor = self:Create("Triangle", {
-			Color = Color3.fromRGB(180, 180, 180),
+			Color = Color3.fromRGB(135, 135, 135),
 			Transparency = 1,
 		})
 		self.cursor1 = self:Create("Triangle", {
-			Color = Color3.fromRGB(240, 240, 240),
+			Color = Color3.fromRGB(155, 155, 155),
 			Transparency = 1,
 		})
 
