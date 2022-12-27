@@ -3,7 +3,7 @@ local TweenService  = game:GetService("TweenService")
 local noclipE       = false
 local antifall      = false
  
-local function noclip()
+function noclip()
     for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
         if v:IsA("BasePart") and v.CanCollide == true then
             v.CanCollide = false
@@ -12,7 +12,7 @@ local function noclip()
     end
 end
  
-local function moveto(obj, speed)
+function moveto(obj, speed)
     local info = TweenInfo.new(((game.Players.LocalPlayer.Character.HumanoidRootPart.Position - obj.Position).Magnitude)/ speed,Enum.EasingStyle.Linear)
     local tween = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, info, {CFrame = obj})
  
