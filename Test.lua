@@ -13,14 +13,12 @@ local GamesList = {
     [12999874474] = 'DemonSlayerMidnightSunRanked.lua', 
 }
 
-for id,Name in pairs(GamesList)  do 
-    if GameId == id then
-        if MyKey == _G.Key then
-            loadstring(game:HttpGet(Repo.. Name))()
-        else
-            game.Players.LocalPlayer:Kick("Wrong key")
-        end 
+if GamesList[GameId] ~= nil then
+    if _G.Key = MyKey then
+        loadstring(game:HttpGet(Repo.. GamesList[GameId]))()
     else
-        game.Players.LocalPlayer:Kick("Script dont support this game, if u think this is a error report to wertyz#3837")
+        game.Players.LocalPlayer:Kick("Wrong Key, if u think this is a error report to wertyz#3837")
     end
-end
+else
+    game.Players.LocalPlayer:Kick("Script dont support this game, if u think this is a error report to wertyz#3837")
+end 
