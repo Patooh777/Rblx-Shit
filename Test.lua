@@ -14,7 +14,7 @@ local GamesList = {
 }
 
 if GamesList[GameId] ~= nil then
-    if _G.Key = MyKey then
+    if _G.Key == MyKey then
         loadstring(game:HttpGet(Repo.. GamesList[GameId]))()
     else
         game.Players.LocalPlayer:Kick("Wrong Key, if u think this is a error report to wertyz#3837")
